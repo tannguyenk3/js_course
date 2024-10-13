@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Cart Quantity</p>
+
+    <button onclick="
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick=" 
+
+    if (cartQuantity >= 10) {
+        alert(`The cart is full`);
+    } 
+    // else if (cartQuantity < 0) {
+    //     cartQuantity = 0;
+    //     console.log(`Cart Quantity: ${cartQuantity}`);
+    //     alert(`The cart is empty`);
+    // } 
+    else {
+        cartQuantity++;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    }
+
+    ">Add to Cart</button>
+
+    <button onclick="
+    cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+2</button>
+
+    <button onclick="
+    cartQuantity += 3;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+3</button>
+
+    <button  onclick="
+    cartQuantity += 4;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+4</button>
+
+    <button  onclick="
+    cartQuantity += 5;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+5</button>
+
+    <button onclick="
+    cartQuantity = 0;
+    console.log(`Cart Quantity was reset`);
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    ">Reset Cart</button>
+
+    <button onclick="
+    if (cartQuantity < 0) {
+        alert(`Not enough items in the cart`);
+    } else {
+        console.log(`Cart Quantity: ${cartQuantity}`);
+        cartQuantity--;
+    }    
+    ">Remove from cart</button>
+
+    <button onclick="
+    cartQuantity -= 2;
+    
+    if (cartQuantity < 0) {
+        alert(`Not enough items in the cart`);
+    } else {
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    }
+    ">-2</button>
+
+    <button onclick="
+    cartQuantity -= 3;
+    if (cartQuantity < 0) {
+        alert(`Not enough items in the cart`);
+    } else {
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    }    
+    ">-3</button>
+
+    <script>
+        // exercises 6a to 6d
+        // const hour = 12;
+        // const name = 'Tan';
+
+        // if (hour >= 6 && hour <= 12) {
+        //     console.log(`Good morning ${name}!`);
+        // } else if (hour >= 13 && hour <= 17) {
+        //     console.log(`Good afternoon ${name}!`);
+        // } else {
+        //     console.log(`Good everning ${name}!`);
+        // }
+
+        // ======================== // 
+
+        // exercise 6e
+        // const age = 20;
+
+        // if (age <= 6 || age >= 65) {
+        //     console.log('discount');
+        // } else {
+        //     console.log('no discount');
+        // }
+    
+        //exercises 6f - 6j
+
+        // const coinFlip = Math.random();
+
+        //option 1: const result = coinFlip < 0.5 ? 'heads' : 'tails';
+
+
+        //option 2: if (coinFlip < 0.5) {
+        //     result = 'heads';
+        // } else {
+        //     result = 'tails';
+        // }
+
+        // const guess = 'heads';
+
+        //choose 1: console.log(result === guess ? 'You win' : 'You lose');
+
+        //choose 2: if (result === guess) {
+        //     console.log('You win!');
+        // } else {
+        //     console.log('You lose!');
+        // }
+
+        //============================//
+        
+        //Challenge Exercises
+        let cartQuantity = 0;
+
+        
+
+    </script>
+</body>
+</html>

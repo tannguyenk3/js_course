@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>9a</button>
+
+    <button class="js-change-text">9b</button>
+
+    <button onclick="
+        clickButton('heads');
+    ">heads</button>
+
+    <button onclick="
+        clickButton('tails');
+    ">tails</button>
+    <p class="displayText"></p>
+
+    <input placeholder="type your name" class="
+    input-value-name" onkeydown="handleTextKeydown(event)">
+    <button onclick="
+        getName();
+    ">Submit</button>
+    <p class="output-value-name"></p>
+
+    <script>
+        console.log(document.querySelector('button'));
+
+        document.querySelector('.js-change-text')
+        .innerHTML = '9b done';
+
+
+        function clickButton(choice) {
+            if (choice === 'heads')
+            {
+                document.querySelector('.displayText')
+                .innerHTML = 'You chose: heads'
+            } else {
+                document.querySelector('.displayText')
+                .innerHTML = 'You chose: tails'
+            }
+        };
+
+        function getName() {
+            const inputName = document.querySelector('.input-value-name');
+            document.querySelector('.output-value-name')
+            .innerHTML = `Your name is: ${inputName.value}`;
+        };
+        
+        function handleTextKeydown(event) {
+            if (event.key === 'Enter') {
+                getName();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+
+    <button onclick="
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick=" 
+    cartQuantity++;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Add to Cart</button>
+
+    <button onclick="
+    cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+2</button>
+
+    <button onclick="
+    cartQuantity += 3;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+3</button>
+
+    <button  onclick="
+    cartQuantity += 4;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+4</button>
+
+    <button  onclick="
+    cartQuantity += 5;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+5</button>
+
+    <button onclick="
+    cartQuantity = 0;
+    console.log(`Cart Quantity was reset`);
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    ">Reset Cart</button>
+
+    <button onclick="
+    cartQuantity--;
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    ">Remove from cart</button>
+
+    <button onclick="
+    cartQuantity -= 2;
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    ">-2</button>
+
+    <button onclick="
+    cartQuantity -= 3;
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    ">-3</button>
+
+    <br>
+
+    
+    <script>
+        let cartQuantity = 0;
+
+
+        // from a to g
+        // const name = 'Tan';
+        // console.log(`My name is: ${name}`);
+
+        // const cost = (5 + (2 * 3) + 9);
+        // console.log(`Cost of food: $${cost}`);
+
+        // const tax = cost * 0.1;
+        // console.log(`Tax (10%): $${tax}`);
+
+        // const totalCost = cost + tax;
+        // console.log(`Total cost: $${totalCost}`);
+        
+
+        
+
+
+    </script>
+</body>
+</html>

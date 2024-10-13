@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions 2</title>
+</head>
+<body>
+    <script>
+        /*12o
+        function removeEgg(foods) {
+            let eggRemoved = 0;
+
+            return foods.filter((value) => {
+                if (value === 'egg' && eggRemoved < 2) {
+                    eggRemoved++;
+                    return false;
+                }
+
+                return true;
+            });
+        }
+        console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+        */
+    
+        /*12m
+        function removeEgg(foods) {
+            return foods.filter((value) => value !== 'egg');
+        }
+        console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+        */
+
+
+        /*
+        12m
+        function addNum(array, num) {
+            return array.map((value) => value + num);
+        }
+        console.log(addNum([1,2,3], 2));
+        console.log(addNum([-2,-1,0,99],2))
+        */
+
+        /*
+        12l
+        function countPositive(nums) {
+            let positiveNums = 0;
+
+            nums.forEach((value) => {
+                if (value > 0) {
+                    positiveNums++; 
+                }
+            });
+            return positiveNums;
+        }
+        
+        console.log(countPositive([1,-3,5]));
+        console.log(countPositive([-2,3,-5,7,10]));
+        */
+
+        /*
+        12j and k
+        const multiply = (value1, value2) => value1 * value2;
+        console.log(multiply(2,3));
+        console.log(multiply(7,10));
+        */
+    </script>;
+</body>
+</html>
